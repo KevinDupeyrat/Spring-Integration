@@ -7,7 +7,6 @@ import org.springframework.stereotype.Service;
 public class StringPrintService {
 
     public void print(Message<?> message) {
-        System.out.println("String Printing service : " +
-                message.getPayload() + " " + message.getHeaders().get("messageNumber"));
+        System.out.println("String Printing service : " + message.getPayload());
     }
 }

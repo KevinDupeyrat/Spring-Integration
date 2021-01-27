@@ -36,6 +36,7 @@ public class DemoApplication implements ApplicationRunner {
             Message<?> message = MessageBuilder
                     .withPayload(i)
                     .setHeader("messageNumber", i)
+                    .setHeader("TypeHeader","Integer")
                     .build();
             futureList.add(printerGateway.print(message));
         }
