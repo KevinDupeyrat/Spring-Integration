@@ -63,4 +63,10 @@ public class ChannelConfig {
     public static final String STRING_INPUT_CHANNEL = "stringInputChannel";
 
 
+    @Bean
+    public DirectChannel defaultInputChannel() {
+        return new DirectChannel();
+    }
+    public static final String DEFAULT_INPUT_CHANNEL = "defaultInputChannel";
+
 }

@@ -36,4 +36,10 @@ public class EndPointConfig {
     public MessageHandler StringInputChannelServiceActivator(StringPrintService stringPrintService) {
         return message -> stringPrintService.print(message);
     }
+
+    @Bean
+    @ServiceActivator(inputChannel = ChannelConfig.DEFAULT_INPUT_CHANNEL)
+    public MessageHandler DefaultInputChannelServiceActivator() {
+        return message -> System.out.println("Default Input Channle -> " + message.getPayload());
+    }
 }
