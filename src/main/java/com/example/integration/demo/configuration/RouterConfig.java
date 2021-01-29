@@ -64,7 +64,13 @@ public class RouterConfig {
     }*/
 
 
-    @Bean
+    /**
+     * Router config manuelly
+     * @param numericInputChannel
+     * @param stringInputChannel
+     * @return
+     */
+   /* @Bean
     @Router(inputChannel = ChannelConfig.INPUT_CHANNEL)
     public AbstractMessageRouter abstractMessageRouter(DirectChannel numericInputChannel,
                                                        DirectChannel stringInputChannel) {
@@ -82,7 +88,7 @@ public class RouterConfig {
                 return messageChannels;
             }
         };
-    }
+    }*/
 
 
 }
