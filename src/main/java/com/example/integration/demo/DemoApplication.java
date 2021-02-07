@@ -33,7 +33,7 @@ public class DemoApplication implements ApplicationRunner {
     @Override
     public void run(ApplicationArguments args) throws Exception {
 
-        Person[] people = {Person.builder()
+       /* Person[] people = {Person.builder()
                 .firstName("Bowersox")
                 .lastName("Kevin")
                 .numberPhone("123456")
@@ -60,6 +60,6 @@ public class DemoApplication implements ApplicationRunner {
 
                 }
             });
-        }
+        }*/
     }
 }
