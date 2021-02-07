@@ -30,7 +30,7 @@ public class ChannelConfig {
         return directChannel;
     }*/
 
-    @Bean
+    /*@Bean
     @BridgeTo(value = "inputChannel",
             poller = @Poller(fixedRate = "5000", maxMessagesPerPoll = "2"))
     public QueueChannel pollableChannel(CustomChannelInterceptor customChannelInterceptor) {
@@ -68,5 +68,26 @@ public class ChannelConfig {
         return new DirectChannel();
     }
     public static final String DEFAULT_INPUT_CHANNEL = "defaultInputChannel";
+*/
+
+    @Bean
+    public DirectChannel inputChannel() {
+        return new DirectChannel();
+    }
+    public static final String INPUT_CHANNEL = "inputChannel";
+
+
+    @Bean
+    public DirectChannel outputChannel() {
+        return new DirectChannel();
+    }
+    public static final String OUTPUT_CHANNEL = "outputChannel";
+
+
+    @Bean
+    public DirectChannel uppercaseChannel() {
+        return new DirectChannel();
+    }
+    public static final String UPPERCASE_CHANNEL = "uppercaseChannel";
 
 }

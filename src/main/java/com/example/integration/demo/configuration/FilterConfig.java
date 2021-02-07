@@ -16,10 +16,10 @@ public class FilterConfig {
      * @param message
      * @return
      */
-    @Filter(inputChannel = ChannelConfig.INPUT_CHANNEL,
+    /*@Filter(inputChannel = ChannelConfig.INPUT_CHANNEL,
             outputChannel = ChannelConfig.STRING_INPUT_CHANNEL)
     public boolean filterConfigInputChannel(Message<?> message) {
         return Integer.parseInt(message.getPayload().toString()) % 2 == 0;
-    }
+    }*/
 
 }

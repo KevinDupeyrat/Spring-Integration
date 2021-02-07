@@ -1,15 +1,24 @@
 package com.example.integration.demo.service;
 
-import org.springframework.messaging.Message;
-import org.springframework.messaging.support.MessageBuilder;
+import com.example.integration.demo.model.Person;
 import org.springframework.stereotype.Service;
 
-import java.util.Locale;
+import java.util.Random;
+import java.util.concurrent.TimeUnit;
 
 @Service
 public class UpperCasePrintService {
 
-    public void print(Message<String> message) {
-        System.out.println(message.getPayload().toUpperCase(Locale.ROOT));
+    public String execute(Person person) {
+
+        try {
+            TimeUnit.SECONDS.sleep(new Random().nextInt(10));
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+
+        return (person.getFirstName() + " " + person.getLastName())
+                .toUpperCase();
     }
 }
