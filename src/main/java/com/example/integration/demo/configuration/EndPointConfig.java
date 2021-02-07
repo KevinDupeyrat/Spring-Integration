@@ -1,10 +1,7 @@
 package com.example.integration.demo.configuration;
 
 import com.example.integration.demo.model.Person;
-import com.example.integration.demo.service.StringPrintService;
-import com.example.integration.demo.service.NumericPrintService;
-import com.example.integration.demo.service.PrintService;
-import com.example.integration.demo.service.UpperCasePrintService;
+import com.example.integration.demo.service.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -46,6 +43,9 @@ public class EndPointConfig {
     @Autowired
     private PrintService printService;
 
+    @Autowired
+    private PersonRegistrationService personRegistrationService;
+
    /* @ServiceActivator(inputChannel = ChannelConfig.INPUT_CHANNEL,
     outputChannel = ChannelConfig.OUTPUT_CHANNEL)
     public String inputChannelServiceActivator(Person person) {
@@ -62,5 +62,13 @@ public class EndPointConfig {
     @ServiceActivator(inputChannel = ChannelConfig.UPPERCASE_CHANNEL)
     public String uppercaseServiceActivator(Person person) {
         return upperCasePrintService.execute(person);
+    }
+
+
+
+    // Outbound channel adapter
+    @ServiceActivator(inputChannel = ChannelConfig.INPUT_CHANNEL)
+    public void uoutboundChannelAdapter(Person person) {
+        personRegistrationService.registerEmail(person);
     }
 }
