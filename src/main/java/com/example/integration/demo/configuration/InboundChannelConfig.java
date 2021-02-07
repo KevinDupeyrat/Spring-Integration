@@ -10,12 +10,12 @@ import org.springframework.integration.annotation.Poller;
 @Configuration
 public class InboundChannelConfig {
 
-    @Autowired
+   /* @Autowired
     private PersonDirectoryService personDirectoryService;
 
     @InboundChannelAdapter(channel = ChannelConfig.INPUT_CHANNEL,
             poller = @Poller(fixedRate = "3000"))
     public Person firstInboundChannel() {
         return personDirectoryService.findNewPeople();
-    }
+    }*/
 }

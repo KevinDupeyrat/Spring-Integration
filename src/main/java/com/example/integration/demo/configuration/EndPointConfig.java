@@ -37,14 +37,14 @@ public class EndPointConfig {
         return message -> System.out.println("Default Input Channle -> " + message.getPayload());
     }*/
 
-    @Autowired
+    /*@Autowired
     private UpperCasePrintService upperCasePrintService;
 
     @Autowired
     private PrintService printService;
 
     @Autowired
-    private PersonRegistrationService personRegistrationService;
+    private PersonRegistrationService personRegistrationService;*/
 
    /* @ServiceActivator(inputChannel = ChannelConfig.INPUT_CHANNEL,
     outputChannel = ChannelConfig.OUTPUT_CHANNEL)
@@ -53,7 +53,7 @@ public class EndPointConfig {
     }*/
 
 
-    @Bean
+    /*@Bean
     @ServiceActivator(inputChannel = ChannelConfig.INPUT_CHANNEL)
     public MessageHandler inputServiceActivator() {
         return message -> printService.print(((Message<Person>) message));
@@ -70,5 +70,5 @@ public class EndPointConfig {
     @ServiceActivator(inputChannel = ChannelConfig.INPUT_CHANNEL)
     public void uoutboundChannelAdapter(Person person) {
         personRegistrationService.registerEmail(person);
-    }
+    }*/
 }

@@ -70,7 +70,7 @@ public class ChannelConfig {
     public static final String DEFAULT_INPUT_CHANNEL = "defaultInputChannel";
 */
 
-    @Bean
+    /*@Bean
     public DirectChannel inputChannel() {
         return new DirectChannel();
     }
@@ -88,6 +88,6 @@ public class ChannelConfig {
     public DirectChannel uppercaseChannel() {
         return new DirectChannel();
     }
-    public static final String UPPERCASE_CHANNEL = "uppercaseChannel";
+    public static final String UPPERCASE_CHANNEL = "uppercaseChannel";*/
 
 }
