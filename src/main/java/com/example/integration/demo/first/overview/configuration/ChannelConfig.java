@@ -1,17 +1,8 @@
-package com.example.integration.demo.configuration;
+package com.example.integration.demo.first.overview.configuration;
 
-import com.example.integration.demo.interceptor.CustomChannelInterceptor;
-import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.integration.annotation.BridgeTo;
-import org.springframework.integration.annotation.Poller;
-import org.springframework.integration.channel.DirectChannel;
-import org.springframework.integration.channel.PublishSubscribeChannel;
-import org.springframework.integration.channel.QueueChannel;
 
-import java.util.concurrent.Executors;
-
-@Configuration
+// @Configuration
 public class ChannelConfig {
 
     /*@Autowired

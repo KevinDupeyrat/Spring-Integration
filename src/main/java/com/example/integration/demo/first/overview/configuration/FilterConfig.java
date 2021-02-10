@@ -1,10 +1,8 @@
-package com.example.integration.demo.configuration;
+package com.example.integration.demo.first.overview.configuration;
 
-import org.springframework.integration.annotation.Filter;
 import org.springframework.integration.annotation.MessageEndpoint;
-import org.springframework.messaging.Message;
 
-@MessageEndpoint
+// @MessageEndpoint
 public class FilterConfig {
 
 

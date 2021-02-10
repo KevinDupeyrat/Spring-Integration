@@ -1,21 +1,8 @@
-package com.example.integration.demo.configuration;
+package com.example.integration.demo.first.overview.configuration;
 
-import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.integration.annotation.Router;
-import org.springframework.integration.annotation.ServiceActivator;
-import org.springframework.integration.channel.DirectChannel;
-import org.springframework.integration.router.AbstractMessageRouter;
-import org.springframework.integration.router.HeaderValueRouter;
-import org.springframework.integration.router.PayloadTypeRouter;
-import org.springframework.integration.router.RecipientListRouter;
-import org.springframework.messaging.Message;
-import org.springframework.messaging.MessageChannel;
 
-import java.util.ArrayList;
-import java.util.Collection;
-
-@Configuration
+// @Configuration
 public class RouterConfig {
 
     /**

@@ -1,15 +1,6 @@
-package com.example.integration.demo.gateway;
+package com.example.integration.demo.first.overview.gateway;
 
-import com.example.integration.demo.configuration.ChannelConfig;
-import com.example.integration.demo.model.Person;
-import org.springframework.integration.annotation.Gateway;
-import org.springframework.integration.annotation.GatewayHeader;
 import org.springframework.integration.annotation.MessagingGateway;
-import org.springframework.messaging.Message;
-import org.springframework.messaging.handler.annotation.Header;
-import org.springframework.util.concurrent.ListenableFuture;
-
-import java.util.concurrent.Future;
 
 @MessagingGateway()
 public interface PrinterGateway {

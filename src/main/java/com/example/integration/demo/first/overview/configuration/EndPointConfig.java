@@ -1,15 +1,8 @@
-package com.example.integration.demo.configuration;
+package com.example.integration.demo.first.overview.configuration;
 
-import com.example.integration.demo.model.Person;
-import com.example.integration.demo.service.*;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.integration.annotation.ServiceActivator;
-import org.springframework.messaging.Message;
-import org.springframework.messaging.MessageHandler;
 
-@Configuration
+// @Configuration
 public class EndPointConfig {
 
    /* @Bean

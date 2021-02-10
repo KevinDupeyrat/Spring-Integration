@@ -1,13 +1,8 @@
-package com.example.integration.demo.configuration;
+package com.example.integration.demo.first.overview.configuration;
 
 import org.springframework.context.annotation.Configuration;
-import org.springframework.integration.annotation.Splitter;
-import org.springframework.messaging.Message;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-
-@Configuration
+// @Configuration
 public class SplitterConfig {
 
     /*@Splitter(inputChannel = ChannelConfig.INPUT_CHANNEL,

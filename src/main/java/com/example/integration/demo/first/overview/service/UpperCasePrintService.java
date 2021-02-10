@@ -1,6 +1,6 @@
-package com.example.integration.demo.service;
+package com.example.integration.demo.first.overview.service;
 
-import com.example.integration.demo.model.Person;
+import com.example.integration.demo.first.overview.model.Person;
 import org.springframework.stereotype.Service;
 
 import java.util.Random;

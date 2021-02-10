@@ -1,13 +1,8 @@
-package com.example.integration.demo.configuration;
+package com.example.integration.demo.first.overview.configuration;
 
-import com.example.integration.demo.model.Person;
-import com.example.integration.demo.service.PersonDirectoryService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.integration.annotation.InboundChannelAdapter;
-import org.springframework.integration.annotation.Poller;
 
-@Configuration
+// @Configuration
 public class InboundChannelConfig {
 
    /* @Autowired

@@ -1,21 +1,12 @@
 package com.example.integration.demo;
 
-import com.example.integration.demo.configuration.ChannelConfig;
-import com.example.integration.demo.gateway.PrinterGateway;
-import com.example.integration.demo.model.Person;
+import com.example.integration.demo.first.overview.gateway.PrinterGateway;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.integration.config.EnableIntegration;
-import org.springframework.integration.support.MessageBuilder;
-import org.springframework.messaging.Message;
-import org.springframework.util.concurrent.ListenableFutureCallback;
-
-import java.util.ArrayList;
-import java.util.List;
-import java.util.concurrent.Future;
 
 
 @SpringBootApplication
